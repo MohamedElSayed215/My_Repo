@@ -2,8 +2,8 @@
 int	main(int argc, char **argv)
 {
 
-    int arr[5]={1,2,3,4} ; 
-    for(int i = 0 ; i < 5 ; i++)
+    int arr[5]={10,20,30,40,50} ; 
+    for(int i = 0 ; i < 10 ; i++)
     {
            
     }
