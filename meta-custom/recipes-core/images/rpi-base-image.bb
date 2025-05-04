@@ -1,9 +1,11 @@
-SUMMARY = "My RPI Base + extras"
+# Base this image on the upstream rpi-basic-image:
+require recipes-core/images/rpi-basic-image.bb
+
+SUMMARY = "RPI Base Image + my extras"
 LICENSE = "MIT"
 
-require meta-raspberrypi/recipes-core/images/rpi-basic-image.bb
-
-IMAGE_INSTALL_append = " your-extra-package othertool"
+# Now append any extra packages you want:
+IMAGE_INSTALL_append = " your-extra-package another-tool"
 
 
 # Systemd Integration
