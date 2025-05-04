@@ -10,7 +10,8 @@ BUILD_DIR="${PROJECT_DIR}/build"
 # Yocto settings
 YOCTO_RELEASE="dunfell"
 MACHINE="raspberrypi4-64"
-
+hostname="basbos"
+DISTRO="basbos"
 echo "=== Yocto CI/CD Build Script ==="
 echo "Project dir: ${PROJECT_DIR}"
 echo "Building for: ${MACHINE}"
