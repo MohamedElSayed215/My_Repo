@@ -1,9 +1,10 @@
-SUMMARY = "Minimal SSH image with systemd and Docker for Raspberry Pi 4 (64-bit)"
-DESCRIPTION = "A minimal image that has SSH, systemd, and Docker enabled for Raspberry Pi 4 (64-bit)"
-
+SUMMARY = "My RPI Base + extras"
 LICENSE = "MIT"
 
-inherit core-image
+require meta-raspberrypi/recipes-core/images/rpi-basic-image.bb
+
+IMAGE_INSTALL_append = " your-extra-package othertool"
+
 
 # Systemd Integration
 
